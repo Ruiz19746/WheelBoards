@@ -16,7 +16,6 @@
 td {
     padding: 8px;
     margin: 5px;
-    color: black;
 }
 
 caption,
@@ -26,10 +25,12 @@ th {
 
 table tr:nth-child(odd) {
     background-color: #6a478c;
+    color: white;
 }
 
 table tr:nth-child(even) {
     background-color: #a98ad9;
+    color: black;
 }
 
 table tr:first-child {
