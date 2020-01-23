@@ -17,6 +17,7 @@ th,
 td {
     padding: 8px;
     margin: 5px;
+    color: rgb(3, 8, 66);
 }
 
 caption {
@@ -24,7 +25,7 @@ caption {
 }
 
 th {
-    color: lightgray;
+    color: white;
 }
 
 table tr:nth-child(odd) {
