@@ -1,7 +1,6 @@
 .servicios {
     width: 60%;
     margin: 2em auto;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -20,16 +19,24 @@ td {
     margin: 5px;
 }
 
+caption {
+    color: white;
+}
+
+th {
+    color: lightgray;
+}
+
 table tr:nth-child(odd) {
-    background-color: rgba(81, 148, 132, 0.788);
+    background-color: #6a478c;
 }
 
 table tr:nth-child(even) {
-    background-color: rgba(147, 192, 182, 0.781);
+    background-color: #a98ad9;
 }
 
 table tr:first-child {
-    background-color: #4bb998;
+    background-color: #3d2068;
 }
 
 .servicios img {
