@@ -112,7 +112,8 @@ footer a:hover {
     color: black;
 }
 
-footer small {
+footer small,
+footer p {
     color: white;
 }
 
