@@ -23,15 +23,14 @@ $(document).ready(function() {
     });
 
     var x = true;
-    $('#trigger').click(function(e) {
-        alert("hola");
+    $('#trigger').on("click", function(e) {
         e.preventDefault();
         if (x) {
             $('nav').stop().slideToggle('fast');
             x = false;
         } else {
             $('nav').stop().slideToggle('fast', function() {
-                $('nav').show("slow");
+                $('nav').css('display', '');
                 x = true;
             })
         }
