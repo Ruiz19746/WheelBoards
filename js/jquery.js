@@ -1,10 +1,10 @@
 $(document).ready(function() {
-    $("#marcador1").click(function() {
-        var x = $("").offset();
+    $("#uno").click(function() {
+        var x = $("#consejos").offset();
         $('html, body').animate({ scrollTop: x.top }, 'slow');
     });
     $("#marcador2").click(function() {
-        var x = $("").offset();
+        var x = $("#modalidades").offset();
         $('html, body').animate({ scrollTop: x.top }, 'slow');
     });
 });
