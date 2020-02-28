@@ -141,6 +141,13 @@ footer p {
     right: 10px;
 }
 
+#arriba {
+    display: block;
+    position: fixed;
+    bottom: 18px;
+    right: 60px;
+}
+
 img:not([alt]) {
     border: 3px solid red;
 }
