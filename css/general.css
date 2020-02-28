@@ -1,193 +1,250 @@
-@font-face {
-    font-family: 'Barlow Condensed Medium';
-    src: url(./BarlowCondensed-Medium.ttf) format('truetype');
-}
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    margin: 1em 0 0 0;
-    background-color: #18171c;
-}
-
-p {
-    font-size: 1.1em;
-    font-family: 'Barlow Condensed Medium';
-    color: lightgray;
-}
-
-h1,
-h2,
-h3,
-h4 {
-    font-family: 'Acme', sans-serif;
-    margin: 1em 0;
-    font-weight: 800;
-}
-
-nav {
-    top: 0px;
-    position: fixed;
-    width: 100%;
-    height: 60px;
-    box-shadow: 0px 6px 5px 0px rgba(168, 164, 164, 0.56);
-}
-
-.parallax {
-    background-image: url('../img/parallax.jpg');
-    height: 200px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    margin-top: 72px;
-    vertical-align: middle;
-}
-
-header .parallax {
-    text-align: center;
-    padding: 2em;
-    color: #3d2068;
-}
-
-header .logo {
-    float: left;
-    width: 10em;
-    height: 10em;
-    margin: 1em;
-    z-index: 1;
-}
-
-header .titulo {
-    font-size: 2em;
-}
-
-.menu {
-    text-align: center;
-    background-color: #3d2068;
-}
-
-.menu ul {
-    margin: 1em 0;
-    list-style-type: none;
-}
-
-.menu ul li {
-    padding: 0.2em;
-    display: inline-block;
-}
-
-.menu ul li a {
-    width: 12%;
-    text-decoration: none;
-    color: lightgray;
-    font-weight: bold;
-    font-size: 1.2em;
-    padding: 0.2em 0.6em 0.2em 0.6em;
-}
-
-.menu ul li a:hover {
-    background-color: #9957CD;
-}
-
-footer {
-    clear: both;
-    margin-top: 2em;
-    text-align: center;
-    padding: 2em;
-    background-color: #3d2068;
-}
-
-footer a {
-    text-decoration: none;
-    color: lightgray;
-}
-
-footer a:hover {
-    text-decoration: none;
-    color: black;
-}
-
-footer small,
-footer p {
-    color: white;
-}
-
-.CC {
-    margin: 0.5em;
-    -webkit-transition: 2s linear;
-    transition: 2s linear;
-}
-
-.CC:hover {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-}
-
-.fab {
-    margin: 0.2em;
-    height: auto;
-    font-size: 2em
-}
-
-#btn-wass {
-    display: block;
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-}
-
-#arriba {
-    display: block;
-    position: fixed;
-    bottom: 18px;
-    right: 60px;
-}
-
-img:not([alt]) {
-    border: 3px solid red;
-}
-
-a[href$=".pdf"]::after {
-    content: url("https://www.shareicon.net/data/16x16/2016/08/13/808584_document_512x512.png");
-}
-
-.tawlogo {
-    font-family: arial, sans-serif;
-    border: 1px solid #555;
-    vertical-align: 0.3em;
-    font-weight: bold;
-    color: #fff;
-    font-size: 0.9em;
-    background-color: #555;
-    padding: 0;
-}
-
-.tawlogo .tnivel {
-    padding: 0 0.4em;
-    border-bottom: 0px;
-    background-color: #555;
-    color: #fff;
-    font-size: 0.8em;
-}
-
-.tawlogo abbr {
-    border-bottom: 0px;
-}
-
-.tawlogo acronym {
-    border-bottom: 0px;
-    padding: 0 0.3em;
-    background-color: #fff;
-    color: #000;
-}
-
-.tawlogo sup {
-    padding: 0em;
-    vertical-align: 0.6em;
-    font-size: 0.6em;
-}
+    @font-face {
+        font-family: 'Barlow Condensed Medium';
+        src: url(./BarlowCondensed-Medium.ttf) format('truetype');
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        margin: 1em 0 0 0;
+        background-color: #18171c;
+    }
+    
+    p {
+        font-size: 1.1em;
+        font-family: 'Barlow Condensed Medium';
+        color: lightgray;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-family: 'Acme', sans-serif;
+        margin: 1em 0;
+        font-weight: 800;
+    }
+    
+    nav {
+        top: 0px;
+        position: fixed;
+        width: 100%;
+        height: 60px;
+        box-shadow: 0px 6px 5px 0px rgba(168, 164, 164, 0.56);
+    }
+    
+    .parallax {
+        background-image: url('../img/parallax.jpg');
+        height: 300px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        margin-top: 72px;
+        vertical-align: middle;
+    }
+    
+    header .parallax {
+        text-align: center;
+        padding: 2em;
+        color: #3d2068;
+    }
+    
+    header .logo {
+        float: left;
+        width: 10em;
+        height: 10em;
+        margin: 1em;
+        z-index: 1;
+    }
+    
+    header .titulo {
+        font-size: 2em;
+    }
+    
+    .menu {
+        text-align: center;
+        background-color: #3d2068;
+    }
+    
+    .menu ul {
+        margin: 1em 0;
+        list-style-type: none;
+    }
+    
+    .menu ul li {
+        padding: 0.2em;
+        display: inline-block;
+    }
+    
+    .menu ul li a {
+        width: 12%;
+        text-decoration: none;
+        color: lightgray;
+        font-weight: bold;
+        font-size: 1.2em;
+        padding: 0.2em 0.6em 0.2em 0.6em;
+    }
+    
+    .menu ul li a:hover {
+        background-color: #9957CD;
+    }
+    
+    footer {
+        clear: both;
+        margin-top: 2em;
+        text-align: center;
+        padding: 2em;
+        background-color: #3d2068;
+    }
+    
+    footer a {
+        text-decoration: none;
+        color: lightgray;
+    }
+    
+    footer a:hover {
+        text-decoration: none;
+        color: black;
+    }
+    
+    footer small,
+    footer p {
+        color: white;
+    }
+    
+    .CC {
+        margin: 0.5em;
+        -webkit-transition: 2s linear;
+        transition: 2s linear;
+    }
+    
+    .CC:hover {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+    
+    .fab {
+        margin: 0.2em;
+        height: auto;
+        font-size: 2em
+    }
+    
+    #btn-wass {
+        display: block;
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+    }
+    
+    #arriba {
+        /* display: none; */
+        position: fixed;
+        bottom: 18px;
+        right: 60px;
+    }
+    
+    img:not([alt]) {
+        border: 3px solid red;
+    }
+    
+    a[href$=".pdf"]::after {
+        content: url("https://www.shareicon.net/data/16x16/2016/08/13/808584_document_512x512.png");
+    }
+    
+    .tawlogo {
+        font-family: arial, sans-serif;
+        border: 1px solid #555;
+        vertical-align: 0.3em;
+        font-weight: bold;
+        color: #fff;
+        font-size: 0.9em;
+        background-color: #555;
+        padding: 0;
+    }
+    
+    .tawlogo .tnivel {
+        padding: 0 0.4em;
+        border-bottom: 0px;
+        background-color: #555;
+        color: #fff;
+        font-size: 0.8em;
+    }
+    
+    .tawlogo abbr {
+        border-bottom: 0px;
+    }
+    
+    .tawlogo acronym {
+        border-bottom: 0px;
+        padding: 0 0.3em;
+        background-color: #fff;
+        color: #000;
+    }
+    
+    .tawlogo sup {
+        padding: 0em;
+        vertical-align: 0.6em;
+        font-size: 0.6em;
+    }
+    
+    #trigger {
+        color: white;
+        text-decoration: none;
+        display: block;
+        padding: 5px;
+        text-align: center;
+        display: none;
+    }
+    
+    nav a {
+        display: inline-block;
+        padding: 5px 10px;
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    
+    @media (max-width:760px) {
+        #trigger {
+            display: block;
+            top: 0px;
+            position: fixed;
+            width: 100%;
+            height: 40px;
+            box-shadow: 0px 6px 5px 0px rgba(168, 164, 164, 0.56);
+            text-align: center;
+            background-color: #3d2068;
+        }
+        nav {
+            display: none;
+        }
+        nav a {
+            width: 100%;
+        }
+        .parallax {
+            height: 180px;
+        }
+        header .parallax {
+            text-align: center;
+            padding: 1em;
+            color: #3d2068;
+        }
+        header .logo {
+            width: 6em;
+            height: 6em;
+            margin: 1em 0.5em;
+            z-index: 1;
+        }
+        header .titulo {
+            font-size: 1.4em;
+        }
+        iframe {
+            width: 90%
+        }
+    }

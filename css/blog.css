@@ -80,3 +80,14 @@ article img {
     padding: 30px;
     max-width: 300px;
 }
+
+@media (max-width:760px) {
+    .aside_derecha .aside {
+        width: 90%;
+        display: block;
+    }
+    .aside_derecha .contenido {
+        width: 100%;
+        display: block;
+    }
+}
