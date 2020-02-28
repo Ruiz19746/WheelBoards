@@ -11,12 +11,28 @@ $(document).ready(function() {
         var posicion = $("#arriba").offset();
         $('html, body').animate({ scrollTop: 0 }, 'slow');
     });
+
     $("#arriba").css("display", "none");
+
     $(window).scroll(function() {
         if ($(window).scrollTop() > 500) {
             $("#arriba").fadeIn('slow');
         } else {
             $("#arriba").fadeOut('slow');
+        }
+    });
+
+    var x = true;
+    $('#trigger').on("click", function(e) {
+        e.preventDefault();
+        if (x) {
+            $('nav').stop().slideToggle('fast');
+            x = false;
+        } else {
+            $('nav').stop().slideToggle('fast', function() {
+                $('nav').css('display', 'block');
+                x = true;
+            })
         }
     });
 });
